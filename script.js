@@ -5,6 +5,9 @@ for (let j = 0; j < 15; j++) {
   button.className='calculator-btn';
   const a = document.getElementById("buttons");
   button.innerHTML = number[j];
+    if (j % 3 === 0) {
+    a.appendChild(document.createElement("br"));
+  } 
   a.appendChild(button);
 
     if(number[j]==="="){
